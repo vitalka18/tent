@@ -3105,6 +3105,7 @@ aside .addthis_widget_container{
 	width: 100%;
 	background: #fff;
 	border: 1px solid #292f38;
+	padding-right: 30px!important;
 }
 .search-form [type="submit"]{
 	position: absolute;
