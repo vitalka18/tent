@@ -84,6 +84,16 @@ button::-moz-focus-inner{
 	list-style: circle;
 	margin-bottom: 15px;
 }
+.page_content_offset .horizontal_list-pag,
+.horizontal_list-pag{
+	padding-left: 0px;
+	list-style: none;
+	margin: 0 0 0 10px;
+}
+.page_content_offset .horizontal_list-pag li,
+.horizontal_list-pag li{
+	float: left;
+}
 .page_content_offset p{margin-bottom: 15px;}
 html,body{
 	height:100%;
@@ -1582,6 +1592,7 @@ blockquote:after{
 	font-size: 18px;
 	text-align: center;
 	margin-bottom: 15px;
+	margin-top: 10px;
 }   
 .product-type-wrapper .big-preview{
 	border: 10px solid #fff;
@@ -2041,6 +2052,7 @@ address{
 }
 .light_gray_bg{
 	background: #f3f3f3;
+	border: 3px solid #e4e4e2;
 }
 #login_popup [role="button"]{
 	margin-left:38px;
@@ -2712,7 +2724,7 @@ li:hover .tooltip,a:hover .tooltip,button:hover .tooltip{
 	padding:9px 0;
 }
 .widget figcaption{
-	background:#323a45;
+	background:#47494b;
 	padding:15px 20px 14px;
 }
 .widget figcaption[class*="relative"]{
@@ -3547,6 +3559,71 @@ fieldset legend .close_fieldset{
 .p_list_description{
 	width:285px;
 }
+.widget_content.news-menu{
+	padding: 0;
+}
+.widget_content.news-menu .sub_menu li a i.fa{
+	right: 10px;
+	top: 8px;
+}
+.widget {
+	overflow: visible;
+}
+.news-menu ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	position: relative;
+}
+.news-menu ul li{
+	
+}
+.news-menu>ul>li{
+	padding-left: 0;
+
+}
+.news-menu>ul>li>a{
+	white-space: normal;
+}
+.two-level-wrap ul{
+	min-height: 100%;
+	width: 200px;
+	float: left;
+}
+.news-menu>ul>li .two-level-wrap ul li:hover .preview{
+	display: block;
+	left: 200px;
+	position: absolute;
+	top: 0;
+}
+.news-menu>ul>li:hover .two-level-wrap{
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 200px;
+	min-height: 100%;
+	left: 100%;
+	opacity: 1;
+	visibility: visible;
+	z-index: 10;
+	background: #fff;
+}
+.news-menu>ul>li.has-two:hover .two-level-wrap{
+	width: 400px;
+}
+.two-level-wrap  .preview{
+	width: 200px;
+	min-height: 100%;
+	float: left;
+	background: #f0f4f4;
+    box-shadow: inset 0 122px 57px -59px #fff, inset 5px 0 7px -5px rgba(0,0,0,.12);
+}
+.news-menu>ul>li .two-level-wrap ul .preview{
+	display: none;
+}
+.news-menu .two-level-wrap{
+	display: none;
+}
 @media only screen and (min-width: 1200px){
 	.container {
 	    width: 1000px;
@@ -3768,6 +3845,71 @@ fieldset legend .close_fieldset{
 	.main_menu > li:first-child:hover > a{
 		background: rgba(28,43,51,0.5) url(../images/nav1.png) 8px center no-repeat;
 		padding-left: 45px;
+	}
+	.widget_content.news-menu{
+		padding: 0;
+	}
+	.widget_content.news-menu .sub_menu li a i.fa{
+		right: 10px;
+		top: 8px;
+	}
+	.widget {
+		overflow: visible;
+	}
+	.news-menu ul{
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		position: relative;
+	}
+	.news-menu ul li{
+		
+	}
+	.news-menu>ul>li{
+		padding-left: 0;
+
+	}
+	.news-menu>ul>li>a{
+		white-space: normal;
+	}
+	.two-level-wrap ul{
+		height: 100%;
+		width: 200px;
+		float: left;
+	}
+	.news-menu>ul>li .two-level-wrap ul li:hover .preview{
+		display: block;
+		left: 200px;
+		position: absolute;
+		top: 0;
+	}
+	.news-menu>ul>li:hover .two-level-wrap{
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 200px;
+		height: 100%;
+		left: 100%;
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		background: #fff;
+	}
+	.news-menu>ul>li.has-two:hover .two-level-wrap{
+		width: 400px;
+	}
+	.two-level-wrap  .preview{
+		width: 200px;
+		height: 100%;
+		float: left;
+		background: #f0f4f4;
+	    box-shadow: inset 0 122px 57px -59px #fff, inset 5px 0 7px -5px rgba(0,0,0,.12);
+	}
+	.news-menu>ul>li .two-level-wrap ul .preview{
+		display: none;
+	}
+	.news-menu .two-level-wrap{
+		display: none;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -4082,8 +4224,143 @@ fieldset legend .close_fieldset{
 	.popup{
 		width:750px;
 	}
+	.widget_content.news-menu{
+		padding: 0;
+	}
+	.widget_content.news-menu .sub_menu li a i.fa{
+		right: 10px;
+		top: 8px;
+	}
+	.widget {
+		overflow: visible;
+	}
+	.news-menu ul{
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		position: relative;
+	}
+	.news-menu ul li a{
+		display: block;
+	    padding: 7.7px 20px;
+	    white-space: pre;
+	    border: none;
+	    position: relative;
+	    background: #fff;
+	    color: #292f38;
+	    text-align: left;
+	}
+	.news-menu ul li a .fa{display: block;}
+	.news-menu>ul>li{
+		padding-left: 0;
+
+	}
+	.news-menu>ul>li>a{
+		white-space: normal;
+	}
+	.two-level-wrap ul{
+		height: 100%;
+		width: 200px;
+		float: left;
+	}
+	.news-menu>ul>li .two-level-wrap ul li:hover .preview{
+		display: block;
+		left: 200px;
+		position: absolute;
+		top: 0;
+	}
+	.news-menu>ul>li:hover .two-level-wrap{
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 200px;
+		height: 100%;
+		left: 100%;
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		background: #fff;
+	}
+	.news-menu>ul>li.has-two:hover .two-level-wrap{
+		width: 400px;
+	}
+	.two-level-wrap  .preview{
+		width: 200px;
+		height: 100%;
+		float: left;
+		background: #f0f4f4;
+	    box-shadow: inset 0 122px 57px -59px #fff, inset 5px 0 7px -5px rgba(0,0,0,.12);
+	}
+	.news-menu>ul>li .two-level-wrap ul .preview{
+		display: none;
+	}
+	.news-menu .two-level-wrap{
+		display: none;
+	}
 }
 @media only screen and (max-width:768px){
+	.two-level-wrap ul{
+		height: 100%;
+		width: 100%;
+		float: none;
+	}
+	.news-menu>ul>li .two-level-wrap ul li:hover .preview{
+		display: none;
+		position: static;
+		margin-top: 10px;
+	}
+	.widget_content.news-menu .sub_menu li a i.fa{
+		font-size: 32px;
+		height: 30px;
+	    width: 30px;
+	    right: 0;
+	    top: 0;
+	    text-align: center;
+	    transition: all .3s;
+	}
+	.news-menu>ul>li a .fa:before {
+	    content: "\f105";
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    line-height: 30px;
+	    text-align: center;
+	}
+	.news-menu>ul>li a .fa.open{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.news-menu>ul>li:hover .two-level-wrap{
+		display: none;
+		position: static;
+		top: 0;
+		width: 100%;
+		height: auto;
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		background: #fff;
+	}
+	.news-menu>ul>li.has-two:hover .two-level-wrap{
+		width: 400px;
+	}
+	.two-level-wrap  .preview{
+		width: 100%;
+		height: auto;
+		display: none;
+		background: #f0f4f4;
+	    box-shadow: inset 0 122px 57px -59px #fff, inset 5px 0 7px -5px rgba(0,0,0,.12);
+	}
+	.news-menu>ul>li .two-level-wrap ul .preview{
+		display: none;
+	}
+	.news-menu .two-level-wrap{
+		display: none;
+	}
+
+
 	.users_nav_wrap{
 		text-align: center;
 	}

@@ -713,6 +713,7 @@ rMenu.checkWindowSize = function(){
 if($(window).width() + rMenu.scrollWidth < 992){
 rMenu.Activate();
 nav.find('.touch_open_sub,.current_click').removeClass('touch_open_sub current_click').children('a').removeClass('prevented');
+	
 }
 else if($(window).width() + rMenu.scrollWidth  > 991){
 rMenu.Deactivate();
@@ -805,7 +806,13 @@ rMenu.init();
 	
 	// custom select
 
-	
+		$('.news-menu').on('click', '.fa', function(e){
+			if($(window).width()<768){
+				e.preventDefault();
+				$(this).parents('li').find('.two-level-wrap').slideToggle(200);
+				$(this).toggleClass('open');
+			}
+		});
 
 	// widgets
 
