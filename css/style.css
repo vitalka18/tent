@@ -2052,8 +2052,12 @@ address{
 }
 .light_gray_bg{
 	background: #f3f3f3;
-	border: 3px solid #e4e4e2;
+	border: 3px solid #ffaf68;
 }
+.light_gray_bg input:not([type="submit"]), .light_gray_bg textarea{
+	border-color: #FFDABB;
+}
+.light_gray_bg h2{color: #FD7E20;}
 #login_popup [role="button"]{
 	margin-left:38px;
 }
